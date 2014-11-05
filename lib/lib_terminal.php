@@ -15,6 +15,7 @@
             $_SESSION['user_name']=$user['user_name'];
             $_SESSION['user_password']=$user['user_password'];
             $_SESSION['terminal_id']=$result;
+            $_SESSION['user_status']=2;
             return true;
         }else {
             return false;
