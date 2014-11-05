@@ -4,7 +4,7 @@
  * 数据库操作的公共库
 */
 
-if (!defined('BLOG'))
+if (!defined('DEW'))
 {
     die('帅哥，求不黑！');
 }
