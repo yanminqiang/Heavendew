@@ -1,14 +1,19 @@
 <?php
-// database host
+/**
+ * 2014年11月05日
+ * @author lvcy
+ * @version 1.0.0
+ * 数据库配置文件
+ */
 $db_host   = "localhost:3306";
 
-// database name
+
 $db_name   = "heavendew";
 
-// database username
+
 $db_user   = "root";
 
-// database password
+
 $db_pass   = "admin";
 define('CHARSET','utf-8');
 
