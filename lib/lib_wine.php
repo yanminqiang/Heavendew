@@ -18,6 +18,15 @@
             return false;
         }
     }
+    function isWineExist($barcode){
+        $sql="select count(*) from wine where barcode='$barcode'";
+        $result=$GLOBALS['db']->getOne($sql);
+        if($result>0){
+            return true;
+        }else{
+            return false;
+        }
+    }
     /**
      * 更新商品信息
      * @param unknown $wine

@@ -47,6 +47,34 @@
         }
     }
     /**
+     * 判断终端店用户名是否已经存在
+     * @param unknown $user_name
+     * @return boolean
+     */
+    function isUserNameExist($user_name){
+        $sql="select count(*) from terminal_user where user_name='".$user_name."'";
+        $result=$GLOBALS['db'].getOne($sql);
+        if($result>0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    /**
+     * 判断终端店邮箱是否已经存在
+     * @param unknown $user_email
+     * @return boolean
+     */
+    function isEmailExist($user_email){
+        $sql="select count(*) from terminal_user where user_email='$user_email'";
+        $result=$GLOBALS['db']->getOne($sql);
+        if($result>0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    /**
      * 获取终端店账户信息
      * @param unknown $terminal_id
      */
